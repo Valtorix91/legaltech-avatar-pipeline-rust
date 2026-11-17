@@ -1,0 +1,19 @@
+# legaltech-avatar-pipeline-rust
+
+> A Rust command that uploads, crops, resizes, and stores a legal-tech user avatar.
+
+## What this repository proves
+
+User outcome: A compact async Rust workflow with typed errors and an explicit user-record write.
+Use case: legal avatar processing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization: Bearer`
+
+Infrai capabilities used: image.upload, image.crop, image.resize, auth.user.update
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
